@@ -3,6 +3,9 @@ name: Build executable
 on:
   workflow_dispatch:
 
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true # Forces pnpm action to run on Node 24
+
 jobs:
   build:
     runs-on: windows-latest
